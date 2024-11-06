@@ -12,9 +12,10 @@ xiaomi,ax1800)
 	;;
 cmiot,ax18|\
 zn,m2)
-	ucidef_set_led_netdev "wan" "WAN" "blue:wan" "wan"
-	ucidef_set_led_netdev "wlan2g" "WLAN2G" "blue:wlan2g" "wlan1"
-	ucidef_set_led_netdev "wlan5g" "WLAN5G" "blue:wlan5g" "wlan0"
+	ucidef_set_led_netdev "wan" "WAN" "m2:blue:wan" "wan"
+	ucidef_set_led_netdev "wlan2g" "WLAN2G" "m2:blue:wlan2g" "phy1-ap0" "tx rx"
+	ucidef_set_led_netdev "wlan5g" "WLAN5G" "m2:blue:wlan5g" "phy0-ap0" "tx rx"
+	ucidef_set_led_netdev "lan" "LAN" "m2:blue:lan" "br-lan"
 	;;
 redmi,ax5-jdcloud|\
 jdcloud,ax1800-pro|\

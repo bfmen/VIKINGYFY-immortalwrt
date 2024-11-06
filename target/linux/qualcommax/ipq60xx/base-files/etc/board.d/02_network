@@ -29,8 +29,8 @@ ipq60xx_setup_interfaces()
 	cmiot,ax18|\
 	jdcloud,ax1800-pro|\
 	qihoo,v6|\
-	redmi,ax5-jdcloud|\
 	redmi,ax5|\
+	redmi,ax5-jdcloud|\
 	xiaomi,ax1800|\
 	zn,m2)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" "wan"

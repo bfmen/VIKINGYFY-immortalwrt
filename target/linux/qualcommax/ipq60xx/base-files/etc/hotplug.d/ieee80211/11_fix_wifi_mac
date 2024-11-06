@@ -20,4 +20,9 @@ case "$board" in
 		[ "$PHYNBR" = "0" ] && macaddr_add $lan_mac 2 > /sys${DEVPATH}/macaddress
 		[ "$PHYNBR" = "1" ] && macaddr_add $lan_mac 3 > /sys${DEVPATH}/macaddress
 		;;
+    zn,m2)
+        lan_mac=$(mtd_get_mac_binary "0:art" 0x6)
+        [ "$PHYNBR" = "0" ] && macaddr_add $lan_mac 1 > /sys${DEVPATH}/macaddress
+        [ "$PHYNBR" = "1" ] && macaddr_add $lan_mac 2 > /sys${DEVPATH}/macaddress
+		;;
 esac
